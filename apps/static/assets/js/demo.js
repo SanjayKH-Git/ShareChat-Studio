@@ -43,7 +43,7 @@ $('#map-example').vectorMap(
 	normalizeFunction: 'linear',
 	scaleColors: ['#b6d6ff', '#005ace'],
 	selectedColor: '#35cd3a',
-	selectedRegions: ['ID', 'RU', 'US', 'AU', 'CN', 'BR'],
+	selectedRegions: ['IN', 'RU', 'US', 'AU', 'CN', 'BR'],
 	showTooltip: true,
 	onRegionClick: function(element, code, region)
 	{
@@ -80,7 +80,7 @@ var statisticsChart = new Chart(ctx, {
 			borderWidth: 2,
 			data: [256, 230, 245, 287, 240, 250, 230, 295, 331, 431, 456, 521]
 		}, {
-			label: "Active Users",
+			label: "Active Viewers",
 			borderColor: '#177dff',
 			pointBackgroundColor: 'rgba(23, 125, 255, 0.6)',
 			pointRadius: 0,

@@ -12,12 +12,12 @@
 			<div class="page-inner py-5">
 				<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
 					<div>
-						<h2 class="text-white pb-2 fw-bold">Dashboard</h2>
-						<h5 class="text-white op-7 mb-2">Free Bootstrap 4 Admin Dashboard</h5>
+						<h2 class="text-white pb-2 fw-bold">ShareChat Studio</h2>
+						<h5 class="text-white op-7 mb-2">Welcome to the <b>ShareChat Creators</b> World</h5>
 					</div>
 					<div class="ml-md-auto py-2 py-md-0">
-						<a href="#" class="btn btn-white btn-border btn-round mr-2">Manage</a>
-						<a href="#" class="btn btn-secondary btn-round">Add Customer</a>
+						<a href="#" class="btn btn-white btn-border btn-round mr-2">Edit Post</a>
+						<a href="#" class="btn btn-secondary btn-round">Create New Post</a>
 					</div>
 				</div>
 			</div>
@@ -28,19 +28,19 @@
 					<div class="card full-height">
 						<div class="card-body">
 							<div class="card-title">Overall statistics</div>
-							<div class="card-category">Daily information about statistics in system</div>
+							<div class="card-category">All information about statistics in system</div>
 							<div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
 								<div class="px-2 pb-2 pb-md-0 text-center">
 									<div id="circles-1"></div>
-									<h6 class="fw-bold mt-3 mb-0">New Users</h6>
+									<h6 class="fw-bold mt-3 mb-0">New Viewers</h6>
 								</div>
 								<div class="px-2 pb-2 pb-md-0 text-center">
 									<div id="circles-2"></div>
-									<h6 class="fw-bold mt-3 mb-0">Sales</h6>
+									<h6 class="fw-bold mt-3 mb-0">Views</h6>
 								</div>
 								<div class="px-2 pb-2 pb-md-0 text-center">
 									<div id="circles-3"></div>
-									<h6 class="fw-bold mt-3 mb-0">Subscribers</h6>
+									<h6 class="fw-bold mt-3 mb-0">Followers</h6>
 								</div>
 							</div>
 						</div>
@@ -49,16 +49,16 @@
 				<div class="col-md-6">
 					<div class="card full-height">
 						<div class="card-body">
-							<div class="card-title">Total income & spend statistics</div>
+							<div class="card-title">Timeline of Your Channel</div>
 							<div class="row py-3">
 								<div class="col-md-4 d-flex flex-column justify-content-around">
 									<div>
-										<h6 class="fw-bold text-uppercase text-success op-8">Total Income</h6>
-										<h3 class="fw-bold">$9.782</h3>
+										<h6 class="fw-bold text-uppercase text-success op-8">Total Posts</h6>
+										<h3 class="fw-bold">18</h3>
 									</div>
 									<div>
-										<h6 class="fw-bold text-uppercase text-danger op-8">Total Spend</h6>
-										<h3 class="fw-bold">$1,248</h3>
+										<h6 class="fw-bold text-uppercase text-danger op-8">Total Watch Hours</h6>
+										<h3 class="fw-bold">0.32 Hours</h3>
 									</div>
 								</div>
 								<div class="col-md-8">
@@ -76,7 +76,7 @@
 					<div class="card">
 						<div class="card-header">
 							<div class="card-head-row">
-								<div class="card-title">User Statistics</div>
+								<div class="card-title">Viewer Statistics</div>
 								<div class="card-tools">
 									<a href="#" class="btn btn-info btn-border btn-round btn-sm mr-2">
 										<span class="btn-label">
@@ -104,12 +104,12 @@
 				<div class="col-md-4">
 					<div class="card card-primary">
 						<div class="card-header">
-							<div class="card-title">Daily Sales</div>
-							<div class="card-category">March 25 - April 02</div>
+							<div class="card-title">Impressions Map</div>
+							<div class="card-category">March 25 - Present</div>
 						</div>
 						<div class="card-body pb-0">
 							<div class="mb-4 mt-2">
-								<h1>$4,578.58</h1>
+								<b>Avg.Score : </b><h1>1670</h1>
 							</div>
 							<div class="pull-in">
 								<canvas id="dailySalesChart"></canvas>
@@ -133,7 +133,7 @@
 					<div class="card">
 						<div class="card-header">
 							<div class="card-head-row card-tools-still-right">
-								<h4 class="card-title">Users Geolocation</h4>
+								<h4 class="card-title">Viewers Geolocation</h4>
 								<div class="card-tools">
 									<button class="btn btn-icon btn-link btn-primary btn-xs"><span class="fa fa-angle-down"></span></button>
 									<button class="btn btn-icon btn-link btn-primary btn-xs btn-refresh-card"><span class="fa fa-sync-alt"></span></button>
@@ -141,7 +141,7 @@
 								</div>
 							</div>
 							<p class="card-category">
-							Map of the distribution of users around the world</p>
+							Map of the distribution of Viewers around the world</p>
 						</div>
 						<div class="card-body">
 							<div class="row">
@@ -152,10 +152,10 @@
 												<tr>
 													<td>
 														<div class="flag">
-															<img src="/static/assets/img/flags/id.png" alt="indonesia">
+															<img src="/static/assets/img/flags/in.png" alt="India">
 														</div>
 													</td>
-													<td>Indonesia</td>
+													<td>India</td>
 													<td class="text-right">
 														2.320
 													</td>
@@ -537,7 +537,7 @@
 		Circles.create({
 			id:'circles-1',
 			radius:45,
-			value:60,
+			value:20,
 			maxValue:100,
 			width:7,
 			text: 5,
@@ -555,7 +555,7 @@
 			value:70,
 			maxValue:100,
 			width:7,
-			text: 36,
+			text: "3.6K",
 			colors:['#f1f1f1', '#2BB930'],
 			duration:400,
 			wrpClass:'circles-wrp',
@@ -586,7 +586,7 @@
 			data: {
 				labels: ["S", "M", "T", "W", "T", "F", "S", "S", "M", "T"],
 				datasets : [{
-					label: "Total Income",
+					label: "Total Views",
 					backgroundColor: '#ff9e27',
 					borderColor: 'rgb(23, 125, 255)',
 					data: [6, 4, 9, 5, 4, 6, 4, 3, 8, 10],
