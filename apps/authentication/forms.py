@@ -56,5 +56,6 @@ class SignUpForm(UserCreationForm):
         ))
 
     class Meta:
+        abstract = True
         model = User
         fields = ('username', 'email', 'password1', 'password2')

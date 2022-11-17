@@ -18,15 +18,16 @@ Circles.create({
 //Notify
 $.notify({
 	icon: 'flaticon-alarm-1',
-	title: 'Atlantis Lite',
-	message: 'Free Bootstrap 4 Admin Dashboard',
-},{
+	title: 'Hackathon Live',
+	message: 'ShareChat Studio Live',
+}
+,{
 	type: 'info',
 	placement: {
 		from: "bottom",
 		align: "right"
 	},
-	time: 1000,
+	time: 100000000,
 });
 
 // JQVmap

@@ -91,6 +91,17 @@ if os.environ.get('DB_ENGINE') and os.environ.get('DB_ENGINE') == "mysql":
         'PORT'    : os.getenv('DB_PORT'     , 3306),
         }, 
     }
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'djongo',
+#             'NAME': 'ShareChatStudio2',
+#             # 'ENFORCE_SCHEMA': False,
+#             'CLIENT': {
+#                 'host':'mongodb+srv://shareadmin:shareadmin@sharechatuserprofile.mihfxmb.mongodb.net/?retryWrites=true&w=majority'}
+#         }
+#     }
+
 else:
     DATABASES = {
         'default': {

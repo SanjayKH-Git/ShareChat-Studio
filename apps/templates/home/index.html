@@ -15,6 +15,7 @@
 						<h2 class="text-white pb-2 fw-bold">ShareChat Studio</h2>
 						<h5 class="text-white op-7 mb-2">Welcome to the <b>ShareChat Creators</b> World</h5>
 					</div>
+					{{context}}
 					<div class="ml-md-auto py-2 py-md-0">
 						<a href="#" class="btn btn-white btn-border btn-round mr-2">Edit Post +</a>
 						<a href="#" class="btn btn-secondary btn-round">Create New Post</a>
@@ -533,14 +534,21 @@
 	<script src="/static/assets/js/setting-demo.js"></script>
 	<script src="/static/assets/js/demo.js"></script>
 
+	
 	<script>
+		alert('{{ request.user.username }}')
+		// alert(JSON.parse('{{ da|escapejs }}')['ab']);
+		// console.log({{ data }});
+		
+		data = JSON.parse('{{ data|escapejs }}') 
+
 		Circles.create({
 			id:'circles-1',
-			radius:50,
+			radius:45,
 			value:20,
 			maxValue:100,
 			width:7,
-			text: 5,
+			text: data['overall']['New Viewers'],
 			colors:['#f1f1f1', '#FF9E27'],
 			duration:400,
 			wrpClass:'circles-wrp',
@@ -555,7 +563,7 @@
 			value:70,
 			maxValue:100,
 			width:7,
-			text: "3.6K",
+			text: data['overall']['Views'],
 			colors:['#f1f1f1', '#2BB930'],
 			duration:400,
 			wrpClass:'circles-wrp',
@@ -570,7 +578,7 @@
 			value:40,
 			maxValue:100,
 			width:7,
-			text: 12,
+			text: data['overall']['followers'],
 			colors:['#f1f1f1', '#F25961'],
 			duration:400,
 			wrpClass:'circles-wrp',
