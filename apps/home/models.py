@@ -18,3 +18,15 @@ class UserDetails(models.Model):
     def __str__(self):
         return self.name
     
+# INSERTING Data
+Default_Data = [ 
+    (56, "shareadmin", "tester@gmail.com", "367238", "{'New Viewers': '178', 'Views': '9.5M', 'followers': '131k'}"),
+    (25, "Tester", "tester@gmail.com", "367238", "{'New Viewers': '10', 'Views': '3.6k', 'followers': '14'}"),
+    (895, "banker", "baker@gmail.com", "367238", "{'New Viewers': '25', 'Views': '2.1k', 'followers': '67'}"),
+    (35, "Easeter", "easter@gmail.com", "989137827", "{'New Viewers': '1230', 'Views': '9.8M', 'followers': '58909'}"),
+    (165, "Broker", "broker@gmail.com", "112337827", "{'New Viewers': '120', 'Views': '3.6M', 'followers': '1400'}")
+]
+
+for row in Default_Data:
+    UserDetails_db = UserDetails(id=row[0], name=row[1], email=row[2], phone=row[3], post=row[4])
+    UserDetails_db.save()
